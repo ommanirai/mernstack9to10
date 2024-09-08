@@ -1,30 +1,46 @@
 <html>
-    <head>
-        <title>background</title>
-        <style>
-            *{
-                margin: 0;
-            }
-            .container{
-                width: 300px;
-                height: 300px;
-                /* background-color: green; */
-                /* background-color: rgb(46, 31, 31); */
-                /* rgb format */
-                /* 0-255 */
-                /* 255 * 255 * 255 */
 
-                /* background-color: #3800ff; */
-                /* hexadecimal format */
-                /* 0-15 */
-                /* 0-9, 10 => a, 11 => b, 15=>f */
+<head>
+    <title>background</title>
+    <style>
+        * {
+            margin: 0;
+        }
 
-                /* rgba */
-                background-color: rgba(255, 0, 0, 1);
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container"></div>
-    </body>
+        .container {
+            width: 700px;
+            height: 1500px;
+            /* background-color: green; */
+            /* background-color: rgb(46, 31, 31); */
+            /* rgb format */
+            /* 0-255 */
+            /* 255 * 255 * 255 */
+
+            /* background-color: #3800ff; */
+            /* hexadecimal format */
+            /* 0-15 */
+            /* 0-9, 10 => a, 11 => b, 15=>f */
+
+            /* rgba */
+            background-color: rgba(255, 0, 0, 1);
+            /* background-image: linear-gradient(to top,red, black, green,blue);
+                 */
+            /* background-image: repeating-linear-gradient(red, black 10%); */
+            /* background-image: radial-gradient(circle,red, blue, green, yellow);
+                  */
+            /* background-image: repeating-radial-gradient(red, blue 80%, green 100%); */
+            background-image: url('https://imgs.search.brave.com/R0sSLHMnicscCJbRuCVSToKMpA06qZgBkOjTlAuzfRc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbGVt/ZW50cy1yZXNpemVk/LmVudmF0b3VzZXJj/b250ZW50LmNvbS9l/bGVtZW50cy12aWRl/by1jb3Zlci1pbWFn/ZXMvZmlsZXMvMzE2/MDMxOTc1LzE5MjB4/MTA4MC5qcGc_dz01/MDAmaD0yODEmY2Zf/Zml0PWNvdmVyJnE9/ODUmZm9ybWF0PWF1/dG8mcz05MmUwYzA4/MmE4YmMyOGM2NGJi/MTk2MmNmMGQyZjg2/ODAyOGYxZjgyNmMz/ZmNmZWUyYTU2MjJj/Mjg4MmRlYmZj');
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-size: cover; */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio minus quibusdam
+        quia?</div>
+</body>
+
 </html>
