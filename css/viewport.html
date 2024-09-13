@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        viewport
+        vw => viewport width => 100vw
+        vh => viewport height => 100vh
+        
+        
+        */
+        *{
+            margin: 0;
+        }
+        .header{
+            /* width: 100%;
+            height: 50px; */
+            width: 100vw;
+            height: 10vh;
+            background-color: aqua;
+        }
+        .footer{
+            /* width: 100%;
+            height: 50px; */
+            width: 100vw;
+            height: 10vh;
+            background-color: aqua;
+        }
+        .main{
+            display: flex;
+        }
+        .left{
+            /* width: 25%;
+            height: 609px; */
+            width: 25vw;
+            height: 80vh;
+            background-color: red;
+        }
+        .right{
+            /* width: 75%; */
+            background-color: yellowgreen;
+        }
+        .right-top{
+            /* width: 100%;
+            height: 300px; */
+            width: 75vw;
+            height: 40vh;
+            background-color: violet;
+        }
+        .right-bottom{
+            /* width: 100%;
+            height: 309px; */
+            /* background-color: black; */
+            display: flex;
+        }
+        .right-bottom-left{
+            /* width: 50%;
+            height: 309px; */
+            width: 40vw;
+            height: 40vh;
+            background-color: cadetblue;
+        }
+        .right-bottom-right{
+            /* width: 50%;
+            height: 309px; */
+            width: 35vw;
+            height: 40vh;
+            background-color: slategrey;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+        li{
+            padding-top: 15px;
+        }
+
+        li:hover{
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+            border-bottom: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Blogs</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">
+            <div class="right-top">right top</div>
+            <div class="right-bottom">
+                <div class="right-bottom-left">right bottom left</div>
+                <div class="right-bottom-right">right bottom right</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
