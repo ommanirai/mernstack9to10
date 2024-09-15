@@ -100,6 +100,22 @@
         .category li:hover{
             background-color:yellowgreen;
         }
+        .sub-category{
+            display: none;
+        }
+        .category li{
+            position: relative;
+        }
+        .category li:hover .sub-category{
+            display: block;
+            list-style: none;
+            position: absolute;
+            left: 100%;
+            background-color: aliceblue;
+            padding: 0;
+            top: 0;
+        }
+        
     </style>
 </head>
 
@@ -109,9 +125,33 @@
             <li class="page">Home</li>
             <li class="page">Products
                 <ul class="category">
-                    <li>Computer</li>
-                    <li>Smartphone</li>
-                    <li>Camera</li>
+                    <li>Computer
+                        <ul class="sub-category">
+                            <li>Acer</li>
+                            <li>Samsung</li>
+                            <li>Dell</li>
+                            <li>HP</li>
+                            <li>Ripple</li>
+                            <li>Mac</li>
+                        </ul>
+                    </li>
+                    <li>Smartphone
+                        <ul class="sub-category">
+                            <li>Samsung 24</li>
+                            <li>Redmi</li>
+                            <li>OnePlus</li>
+                            <li>Iphone</li>
+                        </ul>
+                    </li>
+                    <li>Camera
+                        <ul class="sub-category">
+                            <li>Canon</li>
+                            <li>Nikon</li>
+                            <li>Sony</li>
+                            <li>Panasonic</li>
+                            <li>BlackMagic</li>
+                        </ul>
+                    </li>
                     <li>Airpodes</li>
                     <li>Fitness</li>
                 </ul>
