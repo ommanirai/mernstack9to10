@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+    <style>
+        /* 
+        combinator
+        1. grouping combinator(,)
+        2. descendent combinator(space)
+        3. child combinator(>)
+        4. general sibling combinator(~)
+        5. adjacent sibling combinator(+)
+        
+        */
+
+        /* grouping */
+        h1,
+        p,
+        .demo {
+            color: red;
+        }
+
+        /* descendent */
+        .demo h1 {
+            color: green;
+        }
+
+        /* child */
+        .parent-list>ul {
+            display: flex;
+        }
+
+        /* general sibling */
+        .child1~div{
+            color: darkblue;
+        }
+
+        /* adjacent sibling */
+        .child1+div{
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">child 1</div>
+        <div class="child2">child 2</div>
+        <div class="child3">child 3</div>
+        <div class="child4">child 4</div>
+        <div class="child5">child 5</div>
+    </div>
+
+
+    <div class="demo">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique veniam id necessitatibus excepturi vero,
+            ist</h1>
+    </div>
+    <h1>hello</h1>
+    <p>hi</p>
+
+    <div class="parent-list">
+        <ul>
+            <li>child 1</li>
+            <li>child 2</li>
+            <li>child 3
+                <ul>
+                    <li>grand child 1</li>
+                    <li>grand child 2</li>
+                    <li>grand child 3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
