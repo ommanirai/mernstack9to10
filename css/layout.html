@@ -115,11 +115,47 @@
             padding: 0;
             top: 0;
         }
-        
+        select{
+            display: none;
+        }
+        @media screen and (max-width:600px) {
+            .header{
+                display: none;
+            }
+            select{
+                display: block;
+                width: 100%;
+                height: 50px;
+                background-color: aqua;
+            }
+            .main{
+                flex-direction: column;
+            }
+            .left{
+                width: 100%;
+                height: 300px;
+            }
+            .right{
+                width: 100%;
+            }
+            .right-top{
+                width: 100%;
+            }
+        }
+
+
+
     </style>
 </head>
 
 <body>
+    <select name="" id="">
+        <option value="">Home</option>
+        <option value="">Product</option>
+        <option value="">Blog</option>
+        <option value="">About</option>
+        <option value="">Contact</option>
+    </select>
     <div class="header">
         <ul class="main-page">
             <li class="page">Home</li>
