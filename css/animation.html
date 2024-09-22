@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .demo {
+            width: 250px;
+            height: 250px;
+            background-color: yellowgreen;
+            animation: myAnimation 3s ease 2s 3 backwards alternate;
+        }
+
+        @keyframes myAnimation {
+            from {}
+
+            to {
+                transform: translate(600px);
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <img src="https://imgs.search.brave.com/wA2tzyP7tsLkXgIpknxq0OI211xtV5Rqek7jLP7L00Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLWNk/bi5waG9uZWFyZW5h/LmNvbS9pbWFnZXMv/YXJ0aWNsZS8xNjE4/NjMtd2lkZS10d29f/MzUwL0FwcGxlLWlQ/aG9uZS0xNi12cy1p/UGhvbmUtMTYtUHJv/LXByb2Nlc3Nvci1k/aWZmZXJlbmNlcy1y/ZXZlYWxlZC5qcGc"
+            alt="" width="200px" height="200px">
+    </div>
+</body>
+
+</html>
