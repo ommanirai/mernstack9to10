@@ -14,7 +14,7 @@
             width: 250px;
             height: 250px;
             background-color: yellowgreen;
-            animation: myAnimation 3s ease 2s 3 backwards alternate;
+            animation: myAnim 3s ease 2s infinite backwards normal;
         }
 
         @keyframes myAnimation {
@@ -25,14 +25,38 @@
                 background-color: red;
             }
         }
+
+        @keyframes myAnim {
+            0% {}
+
+            25% {
+                transform: translate(1250px);
+                background-color: aqua;
+                border-radius: 25%;
+            }
+
+            50% {
+                transform: translate(1250px, 450px);
+                background-color: brown;
+                border-radius: 50%;
+            }
+
+            75% {
+                transform: translate(0, 450px);
+                background-color: violet;
+                border-radius: 25%;
+            }
+
+            100% {}
+        }
     </style>
 </head>
 
 <body>
-    <div class="demo">
-        <img src="https://imgs.search.brave.com/wA2tzyP7tsLkXgIpknxq0OI211xtV5Rqek7jLP7L00Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLWNk/bi5waG9uZWFyZW5h/LmNvbS9pbWFnZXMv/YXJ0aWNsZS8xNjE4/NjMtd2lkZS10d29f/MzUwL0FwcGxlLWlQ/aG9uZS0xNi12cy1p/UGhvbmUtMTYtUHJv/LXByb2Nlc3Nvci1k/aWZmZXJlbmNlcy1y/ZXZlYWxlZC5qcGc"
+    <!-- <div class="demo"> -->
+        <img class="demo" src="https://imgs.search.brave.com/wA2tzyP7tsLkXgIpknxq0OI211xtV5Rqek7jLP7L00Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLWNk/bi5waG9uZWFyZW5h/LmNvbS9pbWFnZXMv/YXJ0aWNsZS8xNjE4/NjMtd2lkZS10d29f/MzUwL0FwcGxlLWlQ/aG9uZS0xNi12cy1p/UGhvbmUtMTYtUHJv/LXByb2Nlc3Nvci1k/aWZmZXJlbmNlcy1y/ZXZlYWxlZC5qcGc"
             alt="" width="200px" height="200px">
-    </div>
+    <!-- </div> -->
 </body>
 
 </html>
