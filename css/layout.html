@@ -96,6 +96,7 @@
         .page:hover .category {
             display: block;
         }
+
         .category li{
             padding: 15px;
         }
@@ -120,7 +121,13 @@
         select{
             display: none;
         }
+        .right-middle-screen{
+            display: none;
+        }
         @media screen and (max-width:600px) {
+            .right-middle-screen{
+                display: none;
+            }
             .header{
                 display: none;
             }
@@ -149,8 +156,33 @@
             }
         }
 
-
-
+        @media screen  and (min-width:600px) and (max-width:900px){
+            .right-middle-screen{
+                display: flex;
+                width:100%;
+                height: 309px;
+            }
+            .right-bottom{
+                display: none;
+            }
+            .main{
+                display: flex;
+                height: 300px;
+            }
+            .left{
+                width: 25%;
+                height: 300px;
+            }
+            .right-middle-screen-left{
+                width: 50%;
+                color: white;
+                background-color: rgb(9, 6, 47);
+            }
+            .right-middle-screen-right{
+                width: 50%;
+                background-color: tomato;
+            }
+        }
     </style>
 </head>
 
@@ -212,6 +244,10 @@
                 <div class="right-bottom-right">right bottom right</div>
             </div>
         </div>
+    </div>
+    <div class="right-middle-screen">
+        <div class="right-middle-screen-left">left middle screen</div>
+        <div class="right-middle-screen-right">right middle screen</div>
     </div>
     <div class="footer">footer</div>
 </body>
