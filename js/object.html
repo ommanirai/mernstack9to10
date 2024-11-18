@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <script>
+        // object
+        /*
+        => object is collection of key/value pair, name/value pair, property/value pair
+
+
+        two way of accessing object values:
+        1. dot notation method
+        syntax:
+        objectName.key/name/property
+
+        2. bracket notation method
+        syntax:
+        objectName["key"]
+        objectName['key']
+        */
+        var laptop = {
+            name: "acer",
+            generation: ['i7', "i9", "i11"],
+            ram: {
+                ram1: "8gb",
+                ram2: "16gb",
+                ram3: "32gb"
+            }
+            // name, generation, ram is key/name/property
+            // acer, i7, 16GB is value
+        }
+
+        // bracket notation
+        console.log(laptop["name"])
+        console.log(laptop['ram']['ram3'])
+
+
+        // dot notation
+        // console.log(laptop)
+        // console.log(laptop.name)
+        // var result = laptop.name
+        // console.log(result)
+        // console.log(laptop.generation[5])
+        // console.log(laptop.ram.ram1)
+    </script>
+</body>
+
+</html>
