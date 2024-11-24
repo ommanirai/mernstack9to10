@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operator</title>
+</head>
+
+<body>
+    <h1>logical operator</h1>
+    <script>
+        /*
+        logical operator
+        1. logical and(&&)
+        condition1  condition2  result(condition1 && condition2)
+            TRUE        TRUE        TRUE && TRUE => TRUE
+            TRUE        FALSE       TRUE &&  FALSE => FALSE
+            FALSE       TRUE        FALSE && TRUE    => FALSE
+            FALSE       FALSE       FALSE && FALSE => FALSE 
+
+
+
+
+        2. logical or(||)
+        condition1  condition2  result(condition1 || condition2)
+            TRUE        TRUE        TRUE || TRUE => TRUE
+            TRUE        FALSE       TRUE ||  FALSE => TRUE
+            FALSE       TRUE        FALSE || TRUE    => TRUE
+            FALSE       FALSE       FALSE || FALSE => FALSE 
+        2. logical not(!)
+        condition  result(!condition)
+        TRUE        !TRUE => FALSE
+        FALSE       !FALSE => TRUE
+        condition:
+        
+        
+        */
+        //    logical and
+        var n1 = 122;
+        var n2 = 122;
+
+        var condition1 = n1 > n2;
+        var conditon2 = n1 < n2;
+        var condition3 = n1 == n2;
+        var result = condition1 && conditon2 && condition3
+        console.log("result of logical and is: ", result)
+        // console.log(n1 <= n2 && n1 >= n2 && n1 == n2)
+        // console.log(condition1 && conditon2 && condition3)
+
+        // logical not
+        console.log("result of logical and is: ", !result)
+
+        // logical or
+        var results = condition1 || conditon2 || condition3
+        console.log("result of logical or is is: ", !results)
+
+        console.log((condition1 && conditon2) || condition3)
+    </script>
+
+</body>
+
+</html>
