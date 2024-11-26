@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional operator</title>
+</head>
+
+<body>
+    <h1>conditional operator</h1>
+    <script>
+        /*
+        conditional operator
+        syntax:
+        condition
+        ? body of truth
+        : body of false
+
+        
+        */
+        // var n = Number(prompt("enter number to check positive or negative"));
+        // n > 100
+        //     ? console.log(n + " is greater than 100")
+        //     : console.log(n + ' is less than 100')
+
+        // positive or negative
+        // n > 0
+        //     ? console.log(n + " is positive number")
+        //     : console.log(n + " is negative number")
+
+        // even or odd
+        // n % 2 == 0
+        //     ? n > 100
+        //             ? console.log(n + ' is greater than 100 and even number')
+        //             :  console.log(n+" is less than 100 and even number")
+        //     : console.log(n + ' is odd number')
+
+        var num = 12
+        var n1 = Number(prompt("enter first number"));
+        var n2 = Number(prompt("enter second number"));
+
+        num % n1 == 0 && num % n2 == 0
+            ? console.log(num + " is divisible by both " + n1 + " and " + n2)
+            // : console.log(num + " is not divisible by either" + n1 + " or " + n2)
+            : num % n1 == 0 || num % n2 == 0
+                ? num % n1 == 0
+                    ? console.log(num + " is divisible by " + n1 + ' and not divisible by ' + n2)
+                    : console.log(num + " is divisible by " + n2 + ' and not divisible by ' + n1)
+                : console.log(num + " is not divisible by both " + n1 + " and " + n2)
+
+    // reg
+    // regemail = "random"
+    // regpassword = "demo"
+
+
+    // login
+    // loginemail
+    // loginpassword
+
+
+
+    </script>
+</body>
+
+</html>
