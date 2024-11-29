@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <script>
+        var regEmail = "demo@gmail.com"
+        var regPassword = "demo@123"
+
+        var loginEmail = prompt("enter your email")
+        var loginPassword = prompt("enter your password")
+
+
+        regEmail === loginEmail && regPassword === loginPassword
+            ? console.log("logged in successfully")
+            : regEmail === loginEmail || regPassword === loginPassword
+                ? regEmail === loginEmail
+                    ? console.log("invalid password")
+                    : console.log("invalid email")
+                : console.log("both email and password failed to match")
+    </script>
+</body>
+
+</html>
