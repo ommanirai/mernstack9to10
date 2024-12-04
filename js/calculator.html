@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+</head>
+
+<body>
+    <script>
+        var n1 = Number(prompt("enter first number"))
+        var symbol = prompt("enter symbol")
+        var n2 = Number(prompt("enter second number"))
+        if (symbol === "+") {
+            var addition = n1 + n2;
+            document.write(addition)
+        }
+        else if (symbol === "-") {
+            var sub = n1 - n2;
+            document.write(sub)
+        }
+        else if (symbol === "sqrt") {
+            var sqrt = Math.sqrt(n1)
+            document.write(sqrt)
+        }
+        else if (symbol === "pow") {
+            var pow = Math.pow(n1, n2)
+            document.write(pow)
+        }
+        else {
+            document.write("invalid symbol")
+        }
+
+    </script>
+</body>
+
+</html>
