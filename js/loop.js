@@ -1,6 +1,7 @@
 /*
 loop in javascript:
 1. for
+=> count specific
 syntax:
 for(initialization;condition;increment/decrement){
     body of for
@@ -69,8 +70,20 @@ result: 120
 
 */
 
-for (i = 1; i <= 50; i++) {
-    if (i % 2 == 0) {
-        console.log(i)
-    }
-}
+// for (i = 1; i >= 50; i++) {
+//     console.log(i)
+// }
+
+
+i = 1
+// while (i >= 50) {
+//     console.log(i)
+//     i++
+// }
+
+
+do {
+    console.log(i)
+    i++
+} while (i >= 50)
+
