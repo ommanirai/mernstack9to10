@@ -50,10 +50,14 @@ switch(condition){
 // prompt
 // dom
 
+function sunday(){
+    console.log("Sunday")
+}
+
 var day = 10;
 switch (day) {
     case 1:
-        console.log("Sunday")
+        sunday()
         break;
     case 2:
         console.log("monday")

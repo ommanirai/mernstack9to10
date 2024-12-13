@@ -12,9 +12,15 @@
         var n1 = Number(prompt("enter first number"))
         var symbol = prompt("enter symbol")
         var n2 = Number(prompt("enter second number"))
-        if (symbol === "+") {
+
+        function sum(){
             var addition = n1 + n2;
             document.write(addition)
+        }
+
+
+        if (symbol === "+") {
+            sum()
         }
         else if (symbol === "-") {
             var sub = n1 - n2;
