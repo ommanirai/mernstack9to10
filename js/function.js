@@ -25,6 +25,13 @@ body of function
 }
 
 3. function with return type
+syntax:
+function function_name(parameter){
+    body of function
+    return data
+}
+
+
 4. anynamous(unnamed) function
 5. IIFE(immediately invoked functional expression)
 
