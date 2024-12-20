@@ -55,6 +55,9 @@ type:
 
 /*
 3. block scope
+=> declare within a block{}
+=> accessible within a block
+=> let maintain the block scope
 */
 var greetingText = "hello"
 if (greetingText) {
