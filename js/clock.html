@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clock</title>
+    <style>
+        span{
+            background-color:green;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Clock</h1>
+    <span id="clock"></span>
+    <script>
+        var hour = 0
+        var minute = 0
+        var second = 0
+        setInterval(function () {
+            second++
+            if (second === 10) {
+                minute++
+                second = 1
+            }
+            if (minute === 60) {
+                hour++
+                minute = 1
+                second = 1
+            }
+            document.getElementById("clock").innerHTML = hour + " : " + minute + " : " + second
+        }, 1000)
+    </script>
+</body>
+
+</html>
