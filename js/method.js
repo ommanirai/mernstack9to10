@@ -12,6 +12,15 @@ method
 var text = "Wel come"
 var laptop = 'acer, dell, hp, samsung'
 var n = 100
+var email = 'demo@gmail.com'
+// console.log(email.includes("@gmail.com"))
+if(email.includes("@gmail.com")){
+    console.log("valid email")
+}
+else{
+    console.log("invalid email")
+}
+
 // property
 // console.log(text.length)
 // console.log(text.toUpperCase())
@@ -34,18 +43,4 @@ var num = 100.24234;
 // undefined
 // null
 
-// object
-var details = {
-    name: "acer",
-    ram: '4GB',
-    generation: "i7",
-}
-// for in
-for (var i in details) {
-    // console.log(i)
-    // console.log(details)
-    // console.log(details[i])
-    // details['name']
-    // details['ram']
-    // details['generation']
-}
+
