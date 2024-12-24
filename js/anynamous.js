@@ -6,6 +6,7 @@ function(){
 // function welcome(){
 
 // }
+// var a;
 // var data;
 
 // welcome()
@@ -23,9 +24,10 @@ function welcome() {
 // IIFE(immediately invoked functional expression)
 /*
 syntax:
-(function)()
+()()
 
 */
+// welcome()
 // (welcome)()
 // (function(){
 //     console.log(" i am anynamous function")
@@ -44,3 +46,4 @@ setInterval(function () {
 // press CTRL + C to terminate
 // digital clock
 // 00:00:00
+// var a = 234;
